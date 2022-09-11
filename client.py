@@ -3,11 +3,6 @@ import openai
 import sqlite3
 import os
 
-"""
-TODO: Fine tune the bot
-TODO: sqlite UUID checking
-TODO: obfuscation
-"""
 
 openai.api_key = ""
 
