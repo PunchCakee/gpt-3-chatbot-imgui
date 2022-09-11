@@ -1,5 +1,7 @@
 import dearpygui.dearpygui as imgui
 import openai
+import sqlite3
+
 
 """
 TODO: Fine tune the bot
@@ -14,7 +16,7 @@ imgui.create_context()
 def send():
     with imgui.child_window(autosize_x=True, label="childwindow", parent="primary window", height=50):
         input_box = imgui.get_value(item="input_field")
-        imgui.add_text(f"User: {input_box}")
+        imgui.add_text(f"You: {input_box}")
         
     
 with imgui.window(tag="primary window", label=None, width=200, height=2000, no_move=True, no_collapse=True, no_title_bar=True):
