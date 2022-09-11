@@ -1,6 +1,5 @@
 import dearpygui.dearpygui as imgui
 import openai
-import sqlite3
 import os
 
 """
